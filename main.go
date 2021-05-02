@@ -8,6 +8,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"path/filepath"
 	"strings"
 	"syscall"
 
@@ -112,7 +113,8 @@ func init() {
 	flag.StringVar(&logPath, "path", defaultPath, "log file path")
 	flag.Parse()
 
-	if !isWritable(logPath) {
+	pathOnly := fmt.Sprint(filepath.Dir(logPath))
+	if !isWritable(pathOnly) {
 		log.Fatalf("Fatal: Not authorised to write to %s", logPath)
 	}
 
