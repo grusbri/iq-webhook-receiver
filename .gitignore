@@ -16,3 +16,4 @@ vendor/
 
 # exclude default events.log
 events.log
+*.log
