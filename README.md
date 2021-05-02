@@ -12,9 +12,7 @@ This utility was built with Cloudwatch Agents in mind. An example of the log eve
 
 ### A. Configure IQ Server
 1. Click the *System Preferences* icon in the IQ Server toolbar and then click *Webhooks*.
-2. Click the  *Create Webhook*  button. The dialog opens:
-
-![Webhooks Dialog](https://help.sonatype.com/iqserver/files/330210/330211/5/1590007757377/webhooks.png)
+2. Click the  *Create Webhook*  button.
 3. Enter the webhook URL. (default: http://localhost:3000/callback)
 4. Leave the *webhook secret key* blank. __Note__: This assumes you are running this utility in the same host as the IQ Server.
 5. Select one or more Event Types.
